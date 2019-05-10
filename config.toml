@@ -16,6 +16,7 @@ paginate = 5
   centerTheme = true
   # set a custom favicon (default is a `themeColor` square)
   # favicon = "favicon.ico"
+  showFullContent = true
 
 [languages]
   [languages.en]
