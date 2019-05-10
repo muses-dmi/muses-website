@@ -1,0 +1,8 @@
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  background: var(--accent);
+  color: #F3B73B;
+  padding: 5px 10px;
+}
