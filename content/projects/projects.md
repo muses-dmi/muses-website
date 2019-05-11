@@ -9,7 +9,6 @@ draft: false
 [SVG Interfaces]({{< ref "/projects/svg_interfaces" >}})
 
 
-
 # Muses Audio
 
 # Formalizing Faust in terms of Arrows
