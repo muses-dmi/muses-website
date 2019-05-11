@@ -42,6 +42,10 @@ paginate = 5
         name = "projects"
         url = "/projects"
       [[languages.en.menu.main]]
+        identifier = "papers"
+        name = "papers"
+        url = "/papers"
+      [[languages.en.menu.main]]
         identifier = "github-repo"
         name = "the code"
         url = "https://github.com/muses-dmi"
