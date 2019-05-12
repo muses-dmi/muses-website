@@ -40,7 +40,7 @@ paginate = 5
       [[languages.en.menu.main]]
         identifier = "projects"
         name = "projects"
-        url = "/projects/projects"
+        url = "/projects"
       [[languages.en.menu.main]]
         identifier = "papers"
         name = "papers"
