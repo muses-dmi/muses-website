@@ -14,11 +14,31 @@ The system is based on a subset of Scalable Vector Graphics (SVG); interfaces
 are described using a simple Haskell based 'controller DSL' or equally using a
 vector drawing application (i.e. Illustrator). 
 
+SVG Interfaces a designed as portable format for specifying control interfaces
+independenlty of any particular device, however, to show their practical use we
+have developed example backends for ROLI's
+[Lightpad-M](https://roli.com/products/blocks/lightpad-m) and Sensel's 
+[Morph](https://sensel.com/pages/the-sensel-morph).
+
+The details of designing a control interface and supproting tools are detailed
+in the [SVG Interface
+Documentation](https://github.com/muses-dmi/svg-creator/blob/master/docs/interfaces.md),
+and additionaly below is a short introduction to SVG Interface design.  
+
+Interfaces can be described using the Contoller DSL, for example, a common
+controller is a **stop** button, which emits a stop message each time it is
+pressed:
+
 ```haskell
 stop ! #x 3 ! #y 3 ! #size 3 
 ```
 
-More generally a stop button is an instance a pad and could just as easily be
+Similar to SVG attributes named labels are used to pass information about
+particular attributes of a controller, in this case a stop button has an x and y
+postion for its top left corner and a size, which sets its width and height in
+millimetres.
+
+More generally, a stop button is an instance of a **pad** and could just as easily be
 defined as such:
 ```haskell
 pad ! #x 3 ! #y 3 ! #size 3 ! #address "/stop/" 
@@ -26,10 +46,10 @@ pad ! #x 3 ! #y 3 ! #size 3 ! #address "/stop/"
 
 In both cases the following SVG code is produced:
 ```svg
-<rect interface_osc_address="/midicc" 
+<rect interface_osc_address="/stop/" 
       width="3" height="3" 
       interface_type="pad"  
-      interface_osc_args="100 " 
+      interface_osc_args="" 
       x="3" y="3"/>
 ```
 
@@ -53,10 +73,10 @@ defines the complete interface:
         xmlns:xlink="http://www.w3.org/1999/xlink" 
         version="1.11.1" 
         interface_device="lightpad">
-        <rect interface_osc_address="/midicc" 
+        <rect interface_osc_address="/stop/" 
          width="3" height="3" 
          interface_type="pad"  
-         interface_osc_args="100 " 
+         interface_osc_args="" 
          x="3" y="3"/>
       </svg>
 ```
