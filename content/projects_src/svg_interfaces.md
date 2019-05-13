@@ -112,7 +112,7 @@ record ! #x 69 ! #y 14 ! #r 12
 
 And as a rendered SVG:
 
-<img class="special-img-class" style="width:40%;height:40%" src="/assets/example3.svg" />
+<img class="special-img-class" style="width:40%;height:40%" src="/assets/example3.svg"/>
 
 # A Full Example
 
