@@ -46,4 +46,4 @@ Processing is an active area of research.
 
 # Physcial Modeling with Drums and GPUs 
 
-
+<img class="special-img-class" style="width:50%;height:50%" src="/assets/plugin_interface.png" />
