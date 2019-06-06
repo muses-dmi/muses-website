@@ -12,7 +12,19 @@ SVG Interfaces is an on going project exploring the design and implementation of
 custom controller interfaces, bridging the issue of user mapping between action
 and sound in interactive music systems.
 
-More information can be found [here]({{< ref "/projects_src/svg_interfaces" >}}).
+More information can be found [here]({{< ref "/svg_interfaces_src/svg_interfaces" >}}).
+
+# Notions of Time
+
+Music provides a means to explore time by sequencing musical events in a
+seemingly endless and expressive way. This potential seems to far exceed the
+ability of digital systems to enable composers and performers to fully explore
+musical time due to the influence of Western musical traditions on
+implementation. In this work we look at ways to allow exploration of time
+within a musical context, looking to create tangible examples and methods for
+exploring complex rhythmic relationships. 
+
+More information can be found [here]({{< ref "/not_src/not" >}}).
 
 # Muses Audio
 
