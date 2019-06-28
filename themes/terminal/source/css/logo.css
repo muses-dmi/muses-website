@@ -3,6 +3,9 @@
   align-items: center;
   text-decoration: none;
   background: var(--accent);
-  color: #F3B73B;
   padding: 5px 10px;
+  color: rgba(255, 0, 0, 0.0);
+  padding: 5px 10px;
+  background: url("/assets/muses_text_logo.svg") no-repeat;
+  background-position: center;
 }

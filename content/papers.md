@@ -4,7 +4,7 @@ date: 2019-05-10T15:07:52+01:00
 draft: false
 ---
 
-Benedict R. Gaster, Nathan Renney and Carinna Parraman. (2019) [Fun with Interfaces (SVG Interfaces for Musical Expression)](www.comingsoon.com). Submitted for publication.
+Benedict R. Gaster, Nathan Renney and Carinna Parraman. (2019) [Fun with Interfaces (SVG Interfaces for Musical Expression)](http://eprints.uwe.ac.uk/id/eprint/41424). In: FARM'19 - Proceedings of the 7th ACM SIGPLAN International Workshop on Functional Art, Music, Modeling, and Design.
 
 Renney, H., Gaster, B. R. and Mitchell, T. (2019) [OpenCL vs: Accelerated finite-difference digital synthesis.](http://eprints.uwe.ac.uk/40347) 
 In: IWOCL'19 - 7th International Workshop on OpenCL, NorthEastern University Boston, USA, 12-14 May, 2019. 
