@@ -18,14 +18,10 @@ More information can be found [here]({{< ref "/svg_interfaces_src/svg_interfaces
 
 Music provides a means to explore time by sequencing musical events in a
 seemingly endless and expressive way. Pat is a project that takes inspiration from [Tidal Cycles](https://tidalcycles.org) and provides a means to explore advanced rhythmic concepts like polyrhythm and polymeter within the context of designing digital musical instruments.
-
-As a brief example, consider the following pattern and take a listen to what that may sound like below:
 ```
 [ a   c   e ]   a   a    | : |    a   c   a   c  | : |    g   g   g   g   g   g   g
 ```
-
-More information can be found [here]({{< ref "/pat/overview" >}}).
-
+<button type="button" style="margin:auto;">[View Project]({{< ref "/pat/overview" >}})</button>
 
 # Muses Audio
 
