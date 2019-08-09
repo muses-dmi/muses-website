@@ -24,7 +24,7 @@ As a brief example, consider the following pattern and take a listen to what tha
 [ a   c   e ]   a   a    | : |    a   c   a   c  | : |    g   g   g   g   g   g   g
 ```
 
-More information can be found [here]({{< ref "/not_src/not" >}}).
+More information can be found [here]({{< ref "/pat/overview" >}}).
 
 
 # Muses Audio
