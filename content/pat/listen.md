@@ -2,6 +2,8 @@
 title: "Examples"
 date: 2019-08-09T16:42:08+01:00
 draft: false
+type: muses
+layout: single
 ---
 
 # Audio Examples

@@ -2,6 +2,8 @@
 title: "Pat"
 date: 2019-06-06T08:16:30+01:00
 draft: false
+type: muses
+layout: single
 ---
 
 # Overview
@@ -13,18 +15,18 @@ We have used Pat to illustrate a number of perspectives on this and will continu
 
 ## Applications
 
-### - [Audio Examples]({{< ref examples >}})
+### - [Audio Examples]({{< ref listen >}})
 
 We can listen to an example of _Pat_ directly converted to audio in here and get an idea of how _Pat_ is used.
 
-### - Muses Audio Platform
+### - [Muses Audio Platform]({{< ref synth >}})
 
 Currently we provide an example that integrates with the Muses Audio Platform, a playground app that will be available for download and exploration soon!
 <img class="special-img-class" style="width:50%;height:50%" src="/assets/prMusesApp.png" />
 
 We can listen to an example of _Pat_ directly converted to audio in this example:
 
-### - Muses Audio Platform
+### - DMI Design: Circle Sequencer
 We also demonstrate use of _Pat_ when building the 'Circle Sequencer', stay tuned for the project page that has all the details on that project.
 
 <img class="special-img-class" style="width:50%;height:50%" src="/assets/circleSeq.jpg" />
