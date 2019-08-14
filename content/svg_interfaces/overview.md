@@ -2,6 +2,8 @@
 title: "SVG Interfaces"
 date: 2019-05-11T08:16:30+01:00
 draft: false
+type: muses
+layout: single
 ---
 
 # Overview

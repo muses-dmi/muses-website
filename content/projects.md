@@ -2,6 +2,8 @@
 title: "Projects"
 date: 2019-05-10T13:29:41+01:00
 draft: false
+type: muses
+layout: single
 ---
 
 # SVG Interfaces
@@ -12,7 +14,7 @@ SVG Interfaces is an on going project exploring the design and implementation of
 custom controller interfaces, bridging the issue of user mapping between action
 and sound in interactive music systems.
 
-More information can be found [here]({{< ref "/svg_interfaces_src/svg_interfaces" >}}).
+More information can be found [here]({{< ref "/svg_interfaces/overview" >}}).
 
 # Pat - DSL for exploring Polyrhythm and Polymeter
 
