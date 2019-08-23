@@ -4,7 +4,7 @@ date: 2019-05-10T15:07:52+01:00
 draft: false
 ---
 
-Nathan Renney and Benedict R. Gaster. (2019) [Digital Expression and Representation of Rhythm]{Digital Expression and Representation of Rhythm)](http://eprints.uwe.ac.uk/XXXXX). To appear in: AM'19 Proceedings of the 14th International Audio Mostly Conference on Augmented and Participatory Sound and Music Experiences.
+Nathan Renney and Benedict R. Gaster. (2019) [Digital Expression and Representation of Rhythm](http://eprints.uwe.ac.uk/XXXXX). To appear in: AM'19 Proceedings of the 14th International Audio Mostly Conference on Augmented and Participatory Sound and Music Experiences.
 
 [Slides](https://tobeadded/)
 [Paper](http://eprints.uwe.ac.uk/XXXXX)
