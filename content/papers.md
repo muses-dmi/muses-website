@@ -21,7 +21,7 @@ Benedict R. Gaster, Nathan Renney and Carinna Parraman. (2019) [Fun with Interfa
 Renney, H., Gaster, B. R. and Mitchell, T. (2019) [OpenCL vs: Accelerated finite-difference digital synthesis.](http://eprints.uwe.ac.uk/40347) 
 In: IWOCL'19 - 7th International Workshop on OpenCL, NorthEastern University Boston, USA, 12-14 May, 2019. 
 
-[Slides](https://tobeadded)
+[Slides](../assets/IWOCL_2019_Final_Draft.pptx)
 [Paper](http://eprints.uwe.ac.uk/40347) 
 
 ---
