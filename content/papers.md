@@ -36,5 +36,5 @@ Renney, N., Gaster, B. and Mitchell, T. (2018) [Return to temperament (In digita
 Gaster, B. R., Renney, N. and Mitchell, T. (2018) [Outside the block syndicate: Translating Faust's algebra of blocks to the arrows framework.](http://eprints.uwe.ac.uk/36566) In: Proceedings of the 1st International Faust Conference (IFC-18), Mainz, Germany, 17-18 July 2018. Proceedings of the 1 st International Faust Conference (IFC-18).
 
 [Slides](https://tobeadded)
-[Paper](http://eprints.uwe.ac.uk/36566)
+[Paper](../assets/ifc-2018.pdf)
 
