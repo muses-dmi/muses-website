@@ -5,10 +5,10 @@ draft: false
 ---
 
 Benedict R. Gaster and Carinna Parraman. (2019) [Printing the Muses: Reimaging digital musical instruments
-through 2.5D printing](http://eprints.uwe.ac.uk/41424). In: Proceedings of the IS&T Printing for Fabrication, 2019.
+through 2.5D printing](http://eprints.uwe.ac.uk/XXXX). In: Proceedings of the IS&T Printing for Fabrication, 2019.
 
 [Paper](../assets/ISAndTMusesPaper.pdf)
-[Poster](../assets/printing_the_muses3_poster.pdf)
+[Poster](../assets/printing_the_muses_poster.pdf)
 
 ---
 
