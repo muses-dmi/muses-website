@@ -4,7 +4,15 @@ date: 2019-05-10T15:07:52+01:00
 draft: false
 ---
 
-Nathan Renney and Benedict R. Gaster. (2019) [Digital Expression and Representation of Rhythm](https://uwe-repository.worktribe.com/output/2569484). To appear in: AM'19 Proceedings of the 14th International Audio Mostly Conference on Augmented and Participatory Sound and Music Experiences.
+Benedict R. Gaster and Carinna Parraman. (2019) [Printing the Muses: Reimaging digital musical instruments
+through 2.5D printing](http://eprints.uwe.ac.uk/41424). In: Proceedings of the IS&T Printing for Fabrication, 2019.
+
+[Paper](../assets/ISAndTMusesPaper.pdf)
+[Poster](../assets/printing_the_muses3_poster.pdf)
+
+---
+
+Nathan Renney and Benedict R. Gaster. (2019) [Digital Expression and Representation of Rhythm](https://uwe-repository.worktribe.com/output/2569484). AM'19: Proceedings of the 14th International Audio Mostly Conference on Augmented and Participatory Sound and Music Experiences.
 
 [Slides](https://tobeadded/)
 [Paper](https://uwe-repository.worktribe.com/output/2569484)
