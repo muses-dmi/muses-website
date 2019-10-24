@@ -14,7 +14,7 @@ through 2.5D printing](http://eprints.uwe.ac.uk/41424). In: Proceedings of the I
 
 Nathan Renney and Benedict R. Gaster. (2019) [Digital Expression and Representation of Rhythm](https://uwe-repository.worktribe.com/output/2569484). AM'19: Proceedings of the 14th International Audio Mostly Conference on Augmented and Participatory Sound and Music Experiences.
 
-[Slides](https://tobeadded/)
+<!-- [Slides](../presentations/Digital Expression and Representation of Rhythm) -->
 [Paper](https://uwe-repository.worktribe.com/output/2569484)
 
 ---
@@ -22,7 +22,7 @@ Nathan Renney and Benedict R. Gaster. (2019) [Digital Expression and Representat
 Benedict R. Gaster, Nathan Renney and Carinna Parraman. (2019) [Fun with Interfaces (SVG Interfaces for Musical Expression)](http://eprints.uwe.ac.uk/41424). In: FARM'19 - Proceedings of the 7th ACM SIGPLAN International Workshop on Functional Art, Music, Modeling, and Design.
 
 [Slides](https://bgaster.github.io/farm19/)
-[Paper](http://eprints.uwe.ac.uk/41424)
+[Paper](http://eprints.uwe.ac.uk/41424) 
 
 ---
 
@@ -36,7 +36,7 @@ In: IWOCL'19 - 7th International Workshop on OpenCL, NorthEastern University Bos
 
 Renney, N., Gaster, B. and Mitchell, T. (2018) [Return to temperament (In digital systems).](http://eprints.uwe.ac.uk/37544) In: AM'18: Proceedings of the 13th International Audio Mostly Conference on Augmented and Participatory Sound and Music Experiences., 12 – 14 September 2018.
 
-[Slides](https://tobeadded)
+[Slides](../assets/AM18ConferencePresentation.pptx)
 [Paper](http://eprints.uwe.ac.uk/37544)
 
 ---
