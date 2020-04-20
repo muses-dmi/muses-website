@@ -4,6 +4,14 @@ date: 2019-05-10T15:07:52+01:00
 draft: false
 ---
 
+Renney, Harri., Gaster, Benedict. R. and Mitchell, Tom. (2020) There and Back Again:
+The Practicality of GPU Accelerated Digital Audio. To appear in NIME'20: Proceedings of the
+20th New Interfaces for Musical Expression, June 2020.
+
+[Paper](../assets/There_and_back_again_Evaluating_the_practicality_of_GPU_accelerated_digital_audio_nime20.pdf)
+
+---
+
 Benedict R. Gaster and Carinna Parraman. (2019) [Printing the Muses: Reimaging digital musical instruments
 through 2.5D printing](http://eprints.uwe.ac.uk/XXXX). In: Proceedings of the IS&T Printing for Fabrication, 2019.
 
