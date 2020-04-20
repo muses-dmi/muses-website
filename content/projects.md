@@ -55,6 +55,16 @@ source public, but all things going well we plan to do this by the end of summer
 The application of functional programming to the field of Digital Signal
 Processing is an active area of research.
 
-# Physical Modeling with Drums and GPUs 
+# Numerical Methods for Physical Modelling and GPUs
 
-<img class="special-img-class" style="width:50%;height:50%" src="/assets/plugin_interface.png" />
+Direct numerical methods which have long been studied and applied in physics and mathematics are powerful schemes used to simulate physical phenomena. By simulating the physics of sound wave propagation through instruments and environments, new synthesizers and effects can be accuratly modelled. Physical modelling was for a long time impracticle to compute for most applications. With the level of computational power available today, they are becoming more viable. This project has explored the acceleration of numerical methods for physical modelling by processing on Graphics Processing Units(GPUs).
+
+<img class="special-img-class" style="width:100%;height:50%" src="/assets/plugin_interface.png" />
+
+<button type="button" style="margin:auto;">[View Project]({{< ref "/PM_GPUs/overview" >}})</button>
+
+# Benchmarking
+
+For justification purposes, performance profiling and benchmarking suites have been developed around the design and research of accelerating DSP processes like audio synthesis. Full databases of results and discussions are collected in this project.
+
+<button type="button" style="margin:auto;">[View Project]({{< ref "/benchmarking/overview" >}})</button>
