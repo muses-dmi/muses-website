@@ -1,5 +1,5 @@
 ---
-title: "gpu_accelerated_physical_model_for_real_time_drumhead_synthesis"
+title: "gpu_accelerated_2d_physical_model"
 date: 2019-11-20T08:16:30+01:00
 draft: false
 type: muses
@@ -8,9 +8,9 @@ layout: single
 
 # GPU-Accelerated Physical Model For Real-time Drumhead Synthesis
 
-This post covers the highlights of the code base used to present the GPU-accelerated drumhead physical model program. This application was demonstrated at the [Audio Developers Conference 2019](https://juce.com/adc). The application presents a model of a 2D drumhead physical model based on direct numerical methods from mathematical simulations. Specifically, the model uses finite differencing methods based within the time-domain. These methods are known as finite-difference time-domain(FDTD) simulations. Therefore, the GPU-accelerated drumhead physical model will be referred to as such in the rest of the post.
+This post covers the highlights of the code base used to present the GPU-accelerated drumhead physical model program. This application was demonstrated at the Audio Developers Conference ([ADC 2019](https://juce.com/adc)) and the conference of New Instruments for Musical Expression ([NIME 2020](https://nime2020.bcu.ac.uk/)). The application presents a model of a 2D drumhead physical model based on direct numerical methods from mathematical simulations. Specifically, the model uses finite differencing methods based within the time-domain. These methods are known as finite-difference time-domain(FDTD) simulations. Therefore, the GPU-accelerated drumhead physical model will be referred to as such in the rest of the post.
 
-<img class="special-img-class" style="width:100%;height:50%" src="/assets/drumhead_demo.png" />
+<img class="special-img-class" style="width:100%;height:50%" src="/assets/physical_models&benchmarking/drumhead_demo.png" />
 
 ## FDTD synthesizer
 
@@ -211,10 +211,12 @@ void MainComponent::buttonClicked(Button* btn)
 }
 ```
 
-<img class="special-img-class" style="width:100%;height:50%" src="/assets/drumhead_demo_relation_diagram.png" />
+<img class="special-img-class" style="width:100%;height:50%" src="/assets/physical_models&benchmarking/drumhead_demo_relation_diagram.png" />
 
 ## Conclusion
 
 This project aimed to demonstrate if GPU processing was a viable option for digital audio synthesis with real-time requirements. In this scenario, a FDTD synthesizer was processed on the GPU and appeared to meet acceptable real-time performance when interacting through a Sensel Morph pressure sensor. The dimensions/size of the physical models represented where only achievable on the modest laptop system by utilizing the massively parallel processing available from the GPU. In digital audio processing, there seems to be some reluctance to pursue GPU acceleration because of the communication overhead involved when using the GPU. With the correct techniques to reduce communication overhead and only processing suitable tasks on the GPU, there is huge potential for computing digital audio on GPUs.
 
-You can find the source code for the current implementation at [Coming soon](www.google.com).
+You can find the source code for the current implementation [here](https://github.com/Harri-Renney/Interactive_2D_Physical_Models)
+
+Demonstration video download: [PhysicalModelGPUDemonstration](/assets/physical_models&benchmarking/PhysicalModelGPUDemonstration.zip)
