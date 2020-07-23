@@ -14,17 +14,19 @@ space to cover the benchmarking methodology further, the details of all the test
 The download for the database can be found at the end of this post.
 
 The primary aim of this benchmarking suite is to demonstrate how viable it is to incorporate the GPU into the design of general and real-time audio applications. This is done by creating a collection 
-of tests starting as simple as possible with purely data transfers, working up to complex synthesizers with bidrectional data transfers. One of the most infleuncial parameters exposed in digital audio
+of tests starting as simple as possible with purely data transfers, working up to complex synthesizers with bidirectional data transfers. One of the most influential parameters exposed in digital audio
 is the buffer size. This is the number of samples that can be batched and processed at a time within a program. Using a large buffer size is efficient, though there are other performance issues that arise
-as a consequence which effect real-time scenarios. Latency is the time taken to process a buffer of audio samples. Jitter is the difference between two consecative buffer's latency. Latency and jitter
-have been studied and shown to effect the perception of interative, real-time digital musical instruments. This work invovles the GPU which requires further datatransfers between devices in the 
-system which further effects the latency and jitter. Therefore, the benchmarking suite scales the buffer size and records the overall execution time, latency and jitter of the buffers. The results
+as a consequence which effect real-time scenarios. Latency is the time taken to process a buffer of audio samples. Jitter is the difference between two consecutive buffer's latency. Latency and jitter
+have been studied and shown to affect the perception of interactive, real-time digital musical instruments. This work involves the GPU which requires further data transfers between devices in the 
+system which further affects the latency and jitter. Therefore, the benchmarking suite scales the buffer size and records the overall execution time, latency and jitter of the buffers. The results
 collected by the benchmarking suite can be used to review the practicality of using the GPU in different types of applications. Further, optimal buffer sizes which balance overall efficiency with 
-latency and jitter will be highlighted. 
+latency and jitter will be highlighted.
 
 NOTE! The benchmarking suite only profiles the CPU-GPU interactions. Therefore, measurements of time, latency and jitter from other components which make up the
 rest of the real-time environment is not included in the results. This means the results here need to be appended to the rest of a system's real-time round trip model. The reason for this choice is to 
-isolate the profiling to a component that can be controlled and is consitent.
+isolate the profiling to a component that can be controlled and is consistent.
+
+NOTE! The current benchmarking suite is only supported on Windows. We hope to have builds on other platforms if there is interest. Feel free to make builds on other platforms if you are able!
 
 
 ## Benchmarking Methodology
@@ -34,23 +36,23 @@ The benchmarking methodology is discussed here, describing how the suite was des
 ### Profiling Timer
 
 CPU timers have been used to measure the elapsed time between the beginning and completion of the tests. There are several reasons why CPU timers have been used instead of specific GPU profiling tools.
-Fundementally, CPU timers provide a realistic representation of the time to complete the processes. Ultimately, the time it takes to initiate and complete on the CPU side is what is important,
-even though it executes on the GPU. The GPU profiling tools are extremely useful, and were considered closely for use in this benchmarking suite, however, there are a number of complications. Firstly,
-the tools are vendor specific. This means there are tools provided by NVIDIA for CUDA, while AMD provide tools for OpenCL. This raises an issue with consitency between software tools. The way they record
+Fundamentally, CPU timers provide a realistic representation of the time to complete the processes. Ultimately, the time it takes to initiate and complete on the CPU side is what is important,
+even though it executes on the GPU. The GPU profiling tools are extremely useful and were considered closely for use in this benchmarking suite, however, there are a number of complications. Firstly,
+the tools are vendor-specific. This means there are tools provided by NVIDIA for CUDA, while AMD provides tools for OpenCL. This raises an issue with consistency between software tools. The way they record
 and measure at points may differ and result in an unfair comparison. Secondly, the tools are programs in their own right, and therefore cannot be easily integrated into the benchmarking program, which is
 written in C++.
 
 The benchmarking profile timer has been written as a class, provided in the benchmarker.hpp file. The class allows a timer to be started, paused and ended. The timer works out the total time between
 the timer start to the timer end. Additionally, the timer calculates an average time with respect to the number of pauses used between timer start and end and minimum and maximum times between pauses.
 Another metric called jitter is calculated. The jitter is the difference between consecutive measurements when pausing the timer. The maximum jitter is also recorded. These are all the essential metrics
-considered necessary for evaluating general and real-time tests in this benchmarking suite. When constucting the benchmarking objects, a string is passed and is used to record measurements to a file of
+considered necessary for evaluating general and real-time tests in this benchmarking suite. When constructing the benchmarking objects, a string is passed and is used to record measurements to a file of
 the string name.
 
 ### Benchmarking Flow
 
 The benchmarking suite needs to run the benchmarking tests on different systems which include different sets of hardware. Systems can contain multiple supporting GPUs which should all be tested, this requires
 querying CUDA and OpenCL support for all devices. To begin with, OpenCL support is checked. If OpenCL support is detected, then all supporting devices are listed. The list of OpenCL devices are then iterated
-through and the "General" and "Real-time" benchmarks executed on them. The results are recorded in appropriatly labled files. With all OpenCL devices tested, CUDA support is queried. Like with OpenCL,
+through and the "General" and "Real-time" benchmarks executed on them. The results are recorded in appropriately labelled files. With all OpenCL devices tested, CUDA support is queried. Like with OpenCL,
 if CUDA is supported, all devices are listed and the tests executed on each. It is possible neither OpenCL or CUDA are supported on a system because the runtime or device
 drivers are not installed. This will be communicated on the console and the tester can check if their system can support the technologies and download the necessary software.
 
@@ -74,10 +76,10 @@ if(isCUDACompatible()) {
 
 ### Benchmarking Tests
 
-A number of different benchmarking tests were designed to test different types of typical processes which can be offloaded to the GPU. These vary from simple tests where buffers of samples are transfered back and forth (bidrectional) to simple unidirectional synthesis methods. These will be described in more detail in the following sections.
+A number of different benchmarking tests were designed to test different types of typical processes which can be offloaded to the GPU. These vary from simple tests where buffers of samples are transferred back and forth (bidrectional) to simple unidirectional synthesis methods. These will be described in more detail in the following sections.
 
-The benchmarking suite is built up on a number of different benchmarking tests. These are classified into two types refered to the "General Benchmark" and "Real-time Benchmark" tests. The general 
-benchmarking tests work by running a single test for a set number of repetitions. The total and average time for all the repetitions are measured and recorded. These tests include micro benchmarks which
+The benchmarking suite is built upon a number of different benchmarking tests. These are classified into two types referred to the "General Benchmark" and "Real-time Benchmark" tests. The general 
+benchmarking tests work by running a single test for a set number of repetitions. The total and average time for all the repetitions are measured and recorded. These tests include micro-benchmarks which
 isolate specific processes and measure them. These reflect less of the realistic use of the GPU in the real-world, but offers insight into specific processes and highlight limitations. The template for the general tests are outlined in the following code snippet:
 
 ```c
@@ -102,7 +104,7 @@ Here, the runTest() function executes the test, either side the benchmarker obje
 the benchmarker.elapsedTimer() function is called, which calculates all the averages, jitter, etc and records them to a file.
 
 
-The other type of tests are the "Real-time Benchmark" tests, these reflect a more realsitic use of the GPU in digital audio. These work by measuring the time it takes to process a seconds worth of samples at a given sample rate
+The other type of tests are the "Real-time Benchmark" tests, these reflect a more realistic use of the GPU in digital audio. These work by measuring the time it takes to process a seconds worth of samples at a given sample rate
 using a set buffer length. The real-time template is shown below:
 
 ```c
@@ -121,16 +123,16 @@ benchmarker.elapsedTimer();
 cleanup(hostVariables, deviceVariables);
 ```
 
-Here, instead of just executing for a ste number of times and working out time measurements, the test is executed for a second at the sample rate. The number of times the test needs to run is therefore
+Here, instead of just executing for a set number of times and working out time measurements, the test is executed for a second at the sample rate. The number of times the test needs to run is therefore
 depedent on the bufferLength variable. For example, if measuring a test at 44.1Khz with a bufferLength of 128, the test is executed 3446 (Round up) times. If the total time measured to do this is above
 1 second, then the test fails to operate in real-time.
 
 All benchmarking tests have an option to run a warmup phase. This runs the test before recording measurements in order to allow the GPU and interfacing API to prepare all
-resources and optimize the process. With this turned off, a disproprotionat amount of time is spent on running the first test. CUDA appeared to be effected by this considerably more than the OpenCL 
+resources and optimize the process. With this turned off, a disproportionate amount of time is spent on running the first test. CUDA appeared to be effected by this considerably more than the OpenCL 
 implementation (See file "OpenCL vs CUDA: Warmup" in "Database of benchmarking results"). This usually will not pose a problem, but in the rare case that it does, these results should be considered.
 
-Many problems fundementally will not perform well in the GPU environment. If a problem inehrintly cannot be designed to maintain thread/data independence and requires threads to communicate and synchonize, 
-the GPU is likely not suitable for the task. However, the kind of tests used in the benchmarking suite have purposefully been chosen as suitable processes for the GPU achtecture. 
+Many problems fundamentally will not perform well in the GPU environment. If a problem inherently cannot be designed to maintain thread/data independence and requires threads to communicate and synchronize, 
+the GPU is likely not suitable for the task. However, the kind of tests used in the benchmarking suite has purposefully been chosen as suitable processes for the GPU architecture. 
 
 Each test is defined in the format as follows: [implementation]_[test]_[type]. The [implementation] is either cl or cuda, and indicates the implementation of openCL or CUDA. The [test] indicate which
 test is actually being used, for example cputogputocpu is the test which measure the time to transfer buffers from CPU to the GPU and back. Finally, the [type] indicates the type of test, these can be
@@ -155,7 +157,7 @@ These include the following tests:
 
 The simple buffer processing test is the first test which introduces GPU processing. It is referenced in the program as *simplebufferprocessing*. The test is naturally bidirectional, as the 
 buffers are sent to the GPU, processed, then sent back to the CPU. The test simply applies attenuation at a constant rate across the whole audio signal. This works by just multiplying each sample with a constant
-value, in this case 0.5. This halves all samples values, which requires no inter-thread communication or inherintly complex processing on the GPU. This makes it a small progression from purely data transfers,
+value, in this case 0.5. This halves all samples values, which requires no inter-thread communication or inherently complex processing on the GPU. This makes it a small progression from purely data transfers
 to involving some very simple processing of the data.
 
 [//]: # (Talk about some interesting results here?)
@@ -175,7 +177,7 @@ Triangular smoothing extends this by taking neigbours two steps in each directio
 
 ([Link to more info](http://terpconnect.umd.edu/~toh/spectrum/Smoothing.html))
 
-The more complex feature required for this smoothing filter is the accessing of neighbouring values in the buffer in order to smooth the signal. Accessing neighbours can effect performance significantly, especially if 
+The more complex feature required for this smoothing filter is the accessing of neighbouring values in the buffer in order to smooth the signal. Accessing neighbours can affect performance significantly, especially if 
 synchonization or inter-thread communication is involved. This test uses an input and output buffer and therefore can maintain read-only accesses, which avoids the challenges that would otherwise be imposed.
 
 [//]: # (Talk about some interesting results here?)
@@ -185,7 +187,7 @@ synchonization or inter-thread communication is involved. This test uses an inpu
 Synthesising audio is the generation of an audio signal. There are many different methods that can be used to do this, one of the most basic is components is a sine oscillator. This can generate an approximate
 sine wave at a specific frequency. In test *simplebuffersynthesis* & *unidirectional_processing*, the sin function is used to generate a single sine wave across the buffers. Instead of generating each sample one after another,
 the samples are generated for each element in the buffer in parallel. This typically is not an intensive process on its own, but it has the potential to scale for techniques such as additive synthesis 
-where hundreds/thousands of sine waves need to be generated. The test maintains a undirectional case, as samples are only transfered back to the CPU from the GPU.
+where hundreds/thousands of sine waves need to be generated. The test maintains a undirectional case, as samples are only transferred back to the CPU from the GPU.
 
 ```c
 float relativeFrequency = frequency / (float)sampleRate;
@@ -206,7 +208,7 @@ float currentSample = sin(2.0 * M_PI * relativeFrequency * time);
 #### Complex Synthesis
 
 The complex synthesis test referenced as *complexbuffersynthesis* & *bidirectional_processing* is the most intensive test in the benchmarking suite. This test builds a physical model based around the mathematics of 2D
-wave propagation. In brief, this works by building a 2 dimensional grid of points approximating regions of space, the discretized wave equation is applied to each point to generate the next state of
+wave propagation. In brief, this works by building a 2-dimensional grid of points approximating regions of space, the discretized wave equation is applied to each point to generate the next state of
 the model. By time-stepping through this model at an audio rate, like 44.1KHz, the model can be sampled and generates audio simulating the real-world phenomena of sound waves propagating through a material.
 More details for this synthesis technique can be found in the paper titled "OpenCL vs: Accelerated Finite-Difference Digital Synthesis" and the blog post [here](https://muses-dmi.github.io/pm_gpus/gpu_accelerated_2d_physical_model/)
 
