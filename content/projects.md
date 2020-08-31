@@ -6,6 +6,14 @@ type: muses
 layout: single
 ---
 
+# Audio Anywhere
+
+<img class="special-img-class" style="width:20%;height:20%" src="/assets/vl1-emulation-screenshot.png" />
+
+Audio Anywhere is a recent project, which aims to explore the idea of compile once, run anywhere for audio DSP code.
+
+More information can be found [here]({{< ref "/audio_anywhere/overview" >}}).
+
 # SVG Interfaces
 
 <img class="special-img-class" style="width:20%;height:20%" src="/assets/control_graphic.svg" />
