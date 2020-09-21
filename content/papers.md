@@ -4,8 +4,15 @@ date: 2019-05-10T15:07:52+01:00
 draft: false
 ---
 
+Gaster, Benedict R. and Cole, Max. (2020) Audio Anywhere with Faust. To appear in 
+Proceedings of the 2ndInternational Faust Conference (IFC-20), December 2020.
+
+[Paper](../assets/aa_faust2020-final.pdf)
+
+---
+
 Renney, Harri., Gaster, Benedict. R. and Mitchell, Tom. (2020) There and Back Again:
-The Practicality of GPU Accelerated Digital Audio. To appear in NIME'20: Proceedings of the
+The Practicality of GPU Accelerated Digital Audio. NIME'20: Proceedings of the
 20th New Interfaces for Musical Expression, June 2020.
 
 [Paper](../assets/There_and_back_again_Evaluating_the_practicality_of_GPU_accelerated_digital_audio_nime20.pdf)
