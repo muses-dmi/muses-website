@@ -14,4 +14,8 @@ For justification purposes, performance profiling and benchmarking suites have b
 
 For the paper published in [NIME 2020](https://nime2020.bcu.ac.uk/), a database of benchmarking results were collected and discussed. All the results could not be covered in the limits of the conference paper, so the database of results can be found here along with further discussion.
 
+## [Benchmarking Database - Survival of the Synthesis: GPU Accelerating Evolutionary Sound Matching]({{< ref benchmarking_database_survival_of_the_synthesis >}})
+
+Database for paper submitted to https://onlinelibrary.wiley.com/journal/15320634
+
 # More Information
