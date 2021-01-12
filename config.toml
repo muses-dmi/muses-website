@@ -49,4 +49,9 @@ paginate = 5
         identifier = "github-repo"
         name = "the code"
         url = "https://github.com/muses-dmi"
+        
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
       
